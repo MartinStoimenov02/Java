@@ -5,7 +5,7 @@ public class Main {
         Connection connection = Connect.getConnection();
 
         InputDesignation inputDesignation=new InputDesignation(connection);
-        inputDesignation.inputDesign("title18");
+        inputDesignation.inputDesign("title20");
 
         DesignationSelector designationSelector = new DesignationSelector(connection);
         ResultSet resultSet = designationSelector.getAllDesignation();

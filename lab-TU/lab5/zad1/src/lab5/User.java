@@ -63,9 +63,7 @@ public class User implements ValidatePhone{
 		if (phoneNumber.matches("[0-9]{10}$")==false) {
 			throw new WrongPhoneNumberException();
 		}
-		
 		return true;
-		
 	}
 	
 }

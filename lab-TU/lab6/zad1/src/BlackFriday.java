@@ -7,18 +7,20 @@ public class BlackFriday {
     void processSales() {
         ProductLoader pl = new ProductLoader();
         Object[] objs = pl.importDataFromFile();
-        books = new Book[pl.getNumberOfRows()];
-        electronics = new Electronics[pl.getNumberOfRows()];
+        books = new Book[pl.getNumberOfBooks()];
+        electronics = new Electronics[pl.getNumberOfEl()];
 
-        int index = 0;
+        int indexBook = 0;
+        int indexEl = 0;
         for (Object object : objs) {
             if (object instanceof Book) {
-                books[index] = (Book) object;
+                books[indexBook] = (Book) object;
+                indexBook++;
             }
             if (object instanceof Electronics) {
-                electronics[index] = (Electronics) object;
+                electronics[indexEl] = (Electronics) object;
+                indexEl++;
             }
-            index++;
         }
     }
 }
