@@ -1,0 +1,1 @@
+BrokenDevice{simptoms='display', days=2, mark='Samsung', model='q222', price=200.0}
