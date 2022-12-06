@@ -2,22 +2,67 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Date;
 import java.util.Scanner;
 
 public class ExportToFile{
+    static BufferedWriter buffWriter = null;
+    static FileWriter fileWriter = null;
+    static String text;
+    static String filePath;
     public static void exportToFile(Vehicles vehicle){
         Scanner sc = new Scanner(System.in);
-        String filePath, text;
+        String command;
+        boolean isCreated;
+        inputPath(vehicle);
+
+        try {
+            while(true){
+                File file = new File(filePath);
+                isCreated = file.createNewFile();
+                if (isCreated) {
+                    System.out.println("The file has been created");
+                    writeInFile(file, vehicle, false);
+                    break;
+                } else {
+                    System.out.println("File already exists! Rename file, rewrite in the same file or add at the end of the same file?" +
+                            "(rename/rewrite/add)?");
+                    command=sc.next();
+                    if(command.equals("rename")){
+                        inputPath(vehicle);
+                    }
+                    else if(command.equals("rewrite")){
+                        writeInFile(file, vehicle, false);
+                        break;
+                    }
+                    else if(command.equals("add")){
+                        writeInFile(file, vehicle, true);
+                        break;
+                    }
+                }
+            }
+        }catch (IOException e) {
+            System.err.println("Exception Occurred:");
+            e.printStackTrace();
+        }
+    }
+
+    public static void inputPath(Vehicles vehicle){
+        Scanner sc = new Scanner(System.in);
         System.out.println("input filepath and name: ");
         filePath=sc.nextLine();
-        BufferedWriter buffWriter = null;
-        FileWriter fileWriter = null;
-        try {
-            File file = new File(filePath);
-            fileWriter = new FileWriter(file);
+        if(filePath.equals("")){
+            filePath="C:\\Users\\marti\\Downloads\\"+vehicle.getMark()+".txt";
+        }
+        else{
+            filePath=filePath+".txt";
+        }
+    }
+
+    public static void writeInFile(File file, Vehicles vehicle, boolean writeOrAppend){
+        try{
+            fileWriter = new FileWriter(file, writeOrAppend);
             buffWriter = new BufferedWriter(fileWriter);
-            text=vehicle.toString();
+            text=vehicle.toString()+"\n";
             buffWriter.write(text);
             buffWriter.flush();
             System.out.println("Ready!");
@@ -36,4 +81,5 @@ public class ExportToFile{
             }
         }
     }
+
 }
