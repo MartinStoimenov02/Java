@@ -1,4 +1,7 @@
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class readParamsFromConsole {
@@ -91,5 +94,115 @@ public class readParamsFromConsole {
         searchParams.add("order");
         searchParams.add(order);
         return searchParams;
+    }
+
+    public static Vehicles inputVehicleOptions(int id){
+        Scanner scanner = new Scanner(System.in);
+        java.sql.Date date=new java.sql.Date(System.currentTimeMillis());
+        String mark="", model="", engine="", transmission="", state="", colour="", coupeType="", city="", description="";
+        double price=0;
+        int year=0, power=0, kilometres=0, euroCategory=0;
+
+        do{
+            System.out.println("mark");
+            mark=scanner.nextLine();
+        }while(mark.equals(""));
+
+        do{
+            System.out.println("model");
+            model=scanner.nextLine();
+        }while(model.equals(""));
+
+        do{
+            try{
+                System.out.println("price: ");
+                price=scanner.nextDouble();
+            }catch(Exception e){
+                System.out.println("input again!");
+                scanner.nextLine();
+            }
+        }while(price==0);
+
+        do{
+            scanner.nextLine();
+            System.out.println("engine: ");
+            engine=scanner.nextLine();
+        }while(engine.equals(""));
+
+        do{
+            System.out.println("transmission: ");
+            transmission=scanner.nextLine();
+        }while(transmission.equals(""));
+
+        do{
+            System.out.println("state:");
+            state=scanner.nextLine();
+        }while(state.equals(""));
+
+
+        do{
+            try{
+                System.out.println("year of Manufacture: ");
+                year=scanner.nextInt();
+            }catch(Exception e){
+                System.out.println("input again!");
+                scanner.nextLine();
+            }
+        }while(year==0);
+
+        do{
+            try{
+                System.out.println("power: ");
+                power=scanner.nextInt();
+            }catch(Exception e){
+                System.out.println("input again!");
+                scanner.nextLine();
+            }
+        }while(power==0);
+
+        do{
+            try{
+                System.out.println("kilometres: ");
+                kilometres=scanner.nextInt();
+            }catch(Exception e){
+                System.out.println("input again!");
+                scanner.nextLine();
+            }
+        }while(kilometres==0);
+
+        do{
+            System.out.println("colour: ");
+            colour=scanner.next();
+        }while(colour.equals(""));
+
+        do{
+            System.out.println("coupe type: ");
+            coupeType=scanner.next();
+        }while(coupeType.equals(""));
+
+
+        do{
+            try{
+                System.out.println("euro");
+                euroCategory=scanner.nextInt();
+            }catch(Exception e){
+                System.out.println("input again!");
+                scanner.nextLine();
+            }
+        }while(euroCategory==0);
+
+        do{
+            scanner.nextLine();
+            System.out.println("city");
+            city=scanner.nextLine();
+        }while(city.equals(""));
+
+        System.out.println("Description");
+        description = scanner.nextLine();
+
+        Vehicles vehicle = new Vehicles(date, mark, model, price, engine, transmission, state, year, power, kilometres, colour,
+                coupeType, euroCategory, city, description, id);
+
+        return vehicle;
     }
 }

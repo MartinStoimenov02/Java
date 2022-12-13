@@ -41,6 +41,27 @@ public class Vehicles {
         setIdUsr(idUsr);
     }
 
+    public Vehicles(Date date, String mark, String model, double price, String engine, String transmission,
+                    String state, int yearOfManufacture, int power, int kilometres, String colour, String coupeType,
+                    int euroCategory, String city, String description, int idUsr) {
+        setDate(date);
+        setMark(mark);
+        setModel(model);
+        setPrice(price);
+        setEngine(engine);
+        setTransmission(transmission);
+        setState(state);
+        setYearOfManufacture(yearOfManufacture);
+        setPower(power);
+        setKilometres(kilometres);
+        setColour(colour);
+        setCoupeType(coupeType);
+        setEuroCategory(euroCategory);
+        setCity(city);
+        setDescription(description);
+        setIdUsr(idUsr);
+    }
+
     public int getId() {
         return id;
     }
@@ -192,6 +213,7 @@ public class Vehicles {
                 "coupe Type:" + coupeType + "\n" +
                 "euro Category:" + euroCategory + "\n" +
                 "city:" + city + "\n" +
-                "Description:" + description + "\n";
+                "Description:" + description + "\n"+
+                "idUser:"+idUsr+"\n";
     }
 }
