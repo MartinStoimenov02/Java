@@ -1,3 +1,4 @@
+import java.io.PrintStream;
 import java.sql.*;
 
 public class ReadFromDatabase {
@@ -7,27 +8,36 @@ public class ReadFromDatabase {
         this.connection = ConnectToDatabase.getConnection();
     }
 
-    public int getCountOfVehicles(String query) throws SQLException {
+    public int getCountOfVehicles(String query, PrintStream out) throws SQLException {
         try{
             query="SELECT COUNT(*) "+query.substring(9, query.length());
-            PreparedStatement preparedStatement1 = ConnectToDatabase.getConnection().prepareStatement(query);
+            PreparedStatement preparedStatement1 = connection.prepareStatement(query);
             ResultSet resultSet1 = preparedStatement1.executeQuery();
             resultSet1.next();
-            int count = resultSet1.getInt(1);
-            return count;
+            return resultSet1.getInt(1);
         }catch(SQLSyntaxErrorException e){
-            System.out.println("Something's wrong! Check input params!");
+            out.println("Something's wrong! Check input params!");
         }
         return 0;
     }
-    public ResultSet getVehicles(String query) throws SQLException {
+    public ResultSet getUsersOrVehicle(String query, PrintStream out) throws SQLException {
         try{
             PreparedStatement preparedStatement = connection.prepareStatement(query);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            return resultSet;
+            return preparedStatement.executeQuery();
         }catch(SQLSyntaxErrorException e){
-            System.out.println("Something's wrong! Check input params!");
+            out.println("Something's wrong! Check input params!");
         }
         return null;
+    }
+
+    public boolean deleteOrEdit(String query, PrintStream out) throws SQLException {
+        try{
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.execute();
+            return true;
+        }catch(SQLSyntaxErrorException e){
+            out.println("Something's wrong! Check input params!");
+        }
+        return false;
     }
 }

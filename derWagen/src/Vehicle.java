@@ -1,6 +1,7 @@
+import java.lang.reflect.Field;
 import java.util.Date;
 
-public class Vehicles {
+public class Vehicle {
     private int id;
     private Date date;
     private String mark;
@@ -19,9 +20,9 @@ public class Vehicles {
     private String description;
     int idUsr;
 
-    public Vehicles(int id, Date date, String mark, String model, double price, String engine, String transmission,
-                    String state, int yearOfManufacture, int power, int kilometres, String colour, String coupeType,
-                    int euroCategory, String city, String description, int idUsr) {
+    public Vehicle(int id, Date date, String mark, String model, double price, String engine, String transmission,
+                   String state, int yearOfManufacture, int power, int kilometres, String colour, String coupeType,
+                   int euroCategory, String city, String description, int idUsr) {
         setId(id);
         setDate(date);
         setMark(mark);
@@ -41,9 +42,9 @@ public class Vehicles {
         setIdUsr(idUsr);
     }
 
-    public Vehicles(Date date, String mark, String model, double price, String engine, String transmission,
-                    String state, int yearOfManufacture, int power, int kilometres, String colour, String coupeType,
-                    int euroCategory, String city, String description, int idUsr) {
+    public Vehicle(Date date, String mark, String model, double price, String engine, String transmission,
+                   String state, int yearOfManufacture, int power, int kilometres, String colour, String coupeType,
+                   int euroCategory, String city, String description, int idUsr) {
         setDate(date);
         setMark(mark);
         setModel(model);
@@ -198,6 +199,35 @@ public class Vehicles {
         this.idUsr = idUsr;
     }
 
+    public void setField(String fieldName, String stringValue){
+        Field field;
+        double doubleValue;
+        int intValue;
+        try {
+            if(fieldName.equals("coupetype")){
+                fieldName="coupeType";
+            }
+            if(fieldName.equals("eurocategory")){
+                fieldName="euroCategory";
+            }
+            field = getClass().getDeclaredField(fieldName);
+            if(fieldName.equals("price")){
+                doubleValue = Double.parseDouble(stringValue);
+                field.set(this, doubleValue);
+            }
+            else if(fieldName.equals("year") || fieldName.equals("power") ||
+                    fieldName.equals("kilometres") || fieldName.equals("euroCategory")){
+                intValue = Integer.parseInt(stringValue);
+                field.set(this, intValue);
+            }
+            else{
+                field.set(this, stringValue);
+            }
+        } catch (SecurityException | IllegalAccessException | IllegalArgumentException | NoSuchFieldException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public String toString() {
         return  "date: " + date + "\n" +
@@ -213,7 +243,6 @@ public class Vehicles {
                 "coupe Type:" + coupeType + "\n" +
                 "euro Category:" + euroCategory + "\n" +
                 "city:" + city + "\n" +
-                "Description:" + description + "\n"+
-                "idUser:"+idUsr+"\n";
+                "Description:" + description + "\n";
     }
 }

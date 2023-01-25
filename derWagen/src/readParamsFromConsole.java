@@ -1,207 +1,203 @@
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
+import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class readParamsFromConsole {
-    public static ArrayList<String> inputParams(){
-        Scanner scanner = new Scanner(System.in);
+    public static ArrayList<String> inputParams(Scanner sc, PrintStream out){
         ArrayList<String> searchParams = new ArrayList<>();
         String mark="", model="", engine="", transmission="", state="", colour="", coupeType="", city="", priceFrom="", priceTo="",
                 yearFrom="", yearTo="", powerFrom="", powerTo="", kilometres="", euroCategory="", order="";
-           System.out.println("mark");
-           mark=scanner.nextLine();
+           out.println("mark");
+           mark=sc.nextLine();
            searchParams.add("mark");
            searchParams.add(mark);
-           System.out.println("model");
-           model=scanner.nextLine();
+           out.println("model");
+           model=sc.nextLine();
            searchParams.add("model");
            searchParams.add(model);
-           System.out.println("price from: ");
-           priceFrom=scanner.nextLine();
+           out.println("price from: ");
+           priceFrom=sc.nextLine();
            searchParams.add("priceFrom");
            searchParams.add(priceFrom);
-           System.out.println("price to:");
-           priceTo=scanner.nextLine();
+           out.println("price to:");
+           priceTo=sc.nextLine();
            if(!priceTo.equals("") && !priceFrom.equals("")) {
                if (Integer.parseInt(priceTo) < Integer.parseInt(priceFrom)) {
-                   System.out.println("second price must be larger than first!");
+                   out.println("second price must be larger than first!");
                }
            }
             searchParams.add("priceTo");
             searchParams.add(priceTo);
-           System.out.println("engine: ");
-           engine=scanner.nextLine();
+           out.println("engine: ");
+           engine=sc.nextLine();
            searchParams.add("engine");
            searchParams.add(engine);
-           System.out.println("transmission: ");
-           transmission=scanner.nextLine();
+           out.println("transmission: ");
+           transmission=sc.nextLine();
            searchParams.add("transmission");
            searchParams.add(transmission);
-           System.out.println("state:");
-           state=scanner.nextLine();
+           out.println("state:");
+           state=sc.nextLine();
            searchParams.add("state");
            searchParams.add(state);
-           System.out.println("year of Manufacture from: ");
-           yearFrom=scanner.nextLine();
+           out.println("year of Manufacture from: ");
+           yearFrom=sc.nextLine();
            searchParams.add("yearFrom");
            searchParams.add(yearFrom);
-           System.out.println("year of Manufacture to:");
-           yearTo=scanner.nextLine();
+           out.println("year of Manufacture to:");
+           yearTo=sc.nextLine();
            if(!yearTo.equals("") && !yearFrom.equals("")){
                if(Integer.parseInt(yearTo)<Integer.parseInt(yearFrom)){
-                   System.out.println("second year must be larger than first!");
+                   out.println("second year must be larger than first!");
                }
            }
            searchParams.add("yearTo");
            searchParams.add(yearTo);
-           System.out.println("power from: ");
-           powerFrom=scanner.nextLine();
+           out.println("power from: ");
+           powerFrom=sc.nextLine();
            searchParams.add("powerFrom");
            searchParams.add(powerFrom);
-           System.out.println("power to: ");
-           powerTo=scanner.nextLine();
+           out.println("power to: ");
+           powerTo=sc.nextLine();
            if(!powerTo.equals("") && !powerFrom.equals("")){
                if(Integer.parseInt(powerTo)<Integer.parseInt(powerFrom)){
-                   System.out.println("second power must be larger than first!");
+                   out.println("second power must be larger than first!");
                }
            }
            searchParams.add("powerTo");
             searchParams.add(powerTo);
-           System.out.println("kilometres: ");
-           kilometres=scanner.nextLine();
+           out.println("kilometres: ");
+           kilometres=sc.nextLine();
            searchParams.add("kilometres");
            searchParams.add(kilometres);
-           System.out.println("colour: ");
-           colour=scanner.nextLine();
+           out.println("colour: ");
+           colour=sc.nextLine();
            searchParams.add("colour");
            searchParams.add(colour);
-           System.out.println("coupe type: ");
-           coupeType=scanner.nextLine();
+           out.println("coupe type: ");
+           coupeType=sc.nextLine();
            searchParams.add("coupeType");
            searchParams.add(coupeType);
-           System.out.println("euro");
-           euroCategory=scanner.nextLine();
+           out.println("euro");
+           euroCategory=sc.nextLine();
            searchParams.add("euroCategory");
            searchParams.add(euroCategory);
-           System.out.println("city");
-           city=scanner.nextLine();
+           out.println("city");
+           city=sc.nextLine();
            searchParams.add("city");
            searchParams.add(city);
-           System.out.println("order by (mark, price, year, power, kilometres, euroCategory, date): ");
-           order=scanner.nextLine();
+           out.println("order by (mark, price, year, power, kilometres, euroCategory, date): ");
+           order=sc.nextLine();
         searchParams.add("order");
         searchParams.add(order);
         return searchParams;
     }
 
-    public static Vehicles inputVehicleOptions(int id){
-        Scanner scanner = new Scanner(System.in);
+    public static Vehicle inputVehicleOptions(int idUsr, Scanner sc, PrintStream out){
         java.sql.Date date=new java.sql.Date(System.currentTimeMillis());
         String mark="", model="", engine="", transmission="", state="", colour="", coupeType="", city="", description="";
         double price=0;
         int year=0, power=0, kilometres=0, euroCategory=0;
 
         do{
-            System.out.println("mark");
-            mark=scanner.nextLine();
+            out.println("mark");
+            mark=sc.nextLine();
         }while(mark.equals(""));
 
         do{
-            System.out.println("model");
-            model=scanner.nextLine();
+            out.println("model");
+            model=sc.nextLine();
         }while(model.equals(""));
 
         do{
             try{
-                System.out.println("price: ");
-                price=scanner.nextDouble();
+                out.println("price: ");
+                price=sc.nextDouble();
             }catch(Exception e){
-                System.out.println("input again!");
-                scanner.nextLine();
+                out.println("input again!");
+                sc.nextLine();
             }
         }while(price==0);
 
         do{
-            scanner.nextLine();
-            System.out.println("engine: ");
-            engine=scanner.nextLine();
+            sc.nextLine();
+            out.println("engine: ");
+            engine=sc.nextLine();
         }while(engine.equals(""));
 
         do{
-            System.out.println("transmission: ");
-            transmission=scanner.nextLine();
+            out.println("transmission: ");
+            transmission=sc.nextLine();
         }while(transmission.equals(""));
 
         do{
-            System.out.println("state:");
-            state=scanner.nextLine();
+            out.println("state:");
+            state=sc.nextLine();
         }while(state.equals(""));
 
 
         do{
             try{
-                System.out.println("year of Manufacture: ");
-                year=scanner.nextInt();
+                out.println("year of Manufacture: ");
+                year=sc.nextInt();
             }catch(Exception e){
-                System.out.println("input again!");
-                scanner.nextLine();
+                out.println("input again!");
+                sc.nextLine();
             }
         }while(year==0);
 
         do{
             try{
-                System.out.println("power: ");
-                power=scanner.nextInt();
+                out.println("power: ");
+                power=sc.nextInt();
             }catch(Exception e){
-                System.out.println("input again!");
-                scanner.nextLine();
+                out.println("input again!");
+                sc.nextLine();
             }
         }while(power==0);
 
         do{
             try{
-                System.out.println("kilometres: ");
-                kilometres=scanner.nextInt();
+                out.println("kilometres: ");
+                kilometres=sc.nextInt();
             }catch(Exception e){
-                System.out.println("input again!");
-                scanner.nextLine();
+                out.println("input again!");
+                sc.nextLine();
             }
         }while(kilometres==0);
 
         do{
-            System.out.println("colour: ");
-            colour=scanner.next();
+            out.println("colour: ");
+            colour=sc.next();
         }while(colour.equals(""));
 
         do{
-            System.out.println("coupe type: ");
-            coupeType=scanner.next();
+            out.println("coupe type: ");
+            coupeType=sc.next();
         }while(coupeType.equals(""));
 
 
         do{
             try{
-                System.out.println("euro");
-                euroCategory=scanner.nextInt();
+                out.println("euro");
+                euroCategory=sc.nextInt();
             }catch(Exception e){
-                System.out.println("input again!");
-                scanner.nextLine();
+                out.println("input again!");
+                sc.nextLine();
             }
         }while(euroCategory==0);
 
         do{
-            scanner.nextLine();
-            System.out.println("city");
-            city=scanner.nextLine();
+            sc.nextLine();
+            out.println("city");
+            city=sc.nextLine();
         }while(city.equals(""));
 
-        System.out.println("Description");
-        description = scanner.nextLine();
+        out.println("Description");
+        description = sc.nextLine();
 
-        Vehicles vehicle = new Vehicles(date, mark, model, price, engine, transmission, state, year, power, kilometres, colour,
-                coupeType, euroCategory, city, description, id);
+        Vehicle vehicle = new Vehicle(date, mark, model, price, engine, transmission, state, year, power, kilometres, colour,
+                coupeType, euroCategory, city, description, idUsr);
 
         return vehicle;
     }
