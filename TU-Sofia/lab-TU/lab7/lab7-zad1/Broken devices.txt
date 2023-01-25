@@ -1,0 +1,3 @@
+BrokenDevice{simptoms='pregrqva', days=2, mark='Lenovo', model='A1000', price=100.0}
+BrokenDevice{simptoms='broken display', days=5, mark='Lenovo', model='A5000', price=500.0}
+BrokenDevice{simptoms='display', days=2, mark='Samsung', model='q222', price=200.0}

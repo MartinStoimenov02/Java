@@ -1,0 +1,13 @@
+/bin/
+/.metadata/
+/.jar/
+/.settings/
+/bin/
+.classpath
+.project
+.class
+.imi
+/.idea/
+.docx
+module-info.java
+.pdf
