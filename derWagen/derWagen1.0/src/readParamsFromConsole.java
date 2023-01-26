@@ -26,8 +26,8 @@ public class readParamsFromConsole {
                    out.println("second price must be larger than first!");
                }
            }
-            searchParams.add("priceTo");
-            searchParams.add(priceTo);
+           searchParams.add("priceTo");
+           searchParams.add(priceTo);
            out.println("engine: ");
            engine=sc.nextLine();
            searchParams.add("engine");
