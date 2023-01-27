@@ -64,84 +64,100 @@ public class Main {
 
     public static void printVehicles(Scanner console, Scanner sc, PrintStream out) throws IOException {
         String read;
-        while(true){    //1)... 2)...
-            read=sc.nextLine();
+        while(true) {    //1)... 2)...
+            read = sc.nextLine();
             System.out.println(read);
-            if(read.startsWith("command")){ //command(openVehicle, newSearch...
-                read=console.nextLine().toLowerCase();    //read command
-                out.println(read);
-                if(read.equals("newsearch")){
+            if (read.startsWith("command")) { //command(openVehicle, newSearch...
+                String command = console.nextLine().toLowerCase();    //read command
+                out.println(command);
+                if(command.equals("newsearch")){
                     sc.nextLine();
                     searchVehicle(console, sc, out);
-                }else if(read.equals("openvehicle")){
+                }else if(command.equals("openvehicle")){
                     while(true){
-                        read=sc.nextLine();
-                        System.out.println(read);
+                        command=sc.nextLine();
+                        System.out.println(command);
                         //out.println("");
-                        if(read.startsWith("date")){break;}
+                        if(command.startsWith("date")){break;}
                         out.println(console.nextInt());
                     }
-                    printOneVehicle(console, sc, out);
-                }else if(read.equals("menu")){
+                    printOneVehicle(sc, out);
+                }else if(command.equals("menu")){
                     myMenu(console, sc, out);
                 }
             }
         }
     }
 
-    public static void printOneVehicle(Scanner console, Scanner sc, PrintStream out) throws IOException {
+    public static void printOneVehicle(Scanner sc, PrintStream out) throws IOException {
+        Scanner console = new Scanner(System.in);
         String read;
         while(true) {
             read = sc.nextLine();
-            if (read.startsWith("command")) {
-                break;
-            }
             System.out.println(read);
-        }
-        read=console.nextLine().toLowerCase();    //read command
-        out.println(read);
-        if(read.equals("backtoads")){
-            printVehicles(console, sc, out);
-        }
+            if (read.startsWith("command")) {
+                String command=console.nextLine().toLowerCase();    //read command
+                    out.println(command);
+                    if(command.equals("backtoads")){
+                        sc.nextLine();
+                        printVehicles(console, sc, out);
+                    }
 
-        else if(read.equals("newsearch")){
-            sc.nextLine();
-            searchVehicle(console, sc, out);
-        }
+                    else if(command.equals("newsearch")){
+                        sc.nextLine();
+                        sc.nextLine();
+                        searchVehicle(console, sc, out);
+                    }
 
-        else if(read.equals("exporttofile")){
-            exportToFile(console, sc, out);
-        }
+                    else if(command.equals("exporttofile")){
+                        read=sc.nextLine();
+                        if(read.startsWith("input")){
+                            System.out.println(read);
+                        }
+                        else{
+                            System.out.println(sc.nextLine());
 
-        else if(read.equals("menu")){
-            myMenu(console, sc, out);
+                        }
+                        exportToFile(sc, out);
+                    }
+
+                    else if(command.equals("menu")){
+                        sc.nextLine();
+                        myMenu(console, sc, out);
+                    }
+            }
         }
-        sc.nextLine();
+        //sc.nextLine();
     }
 
-    public static void exportToFile(Scanner console, Scanner sc, PrintStream out){
+    public static void exportToFile(Scanner sc, PrintStream out){
+        Scanner console = new Scanner(System.in);
         String read;
-        System.out.println("exporttofile function");
-        out.println("C:\\Users\\marti\\Downloads\\Toyota.txt");
-
-//        read=console.nextLine();
-//        out.println(read);
+        read=console.nextLine();
+        out.println(read);
         read=sc.nextLine();
         System.out.println(read);
         if(read.startsWith("The")){
             System.out.println(sc.nextLine());
         }
         else{
-            System.out.println(sc.nextLine());
-            read=console.next();
-            out.println(read);
-            if(read.equals("rename")){
-                System.out.println(sc.nextLine());
-                read=console.nextLine();
+            //while(true){
+                read=console.next();
                 out.println(read);
-            }else if(read.equals("rewrite") || read.equals("add")){
-                System.out.println(sc.nextLine());
-            }
+                if(read.equals("rename")){
+                    System.out.println(sc.nextLine());
+                    console.nextLine();
+                    read=console.nextLine();
+                    out.println(read);
+                    System.out.println(sc.nextLine());
+                    System.out.println(sc.nextLine());
+                    //console.nextLine();
+                }else if(read.equals("rewrite") || read.equals("add")){
+                    System.out.println(sc.nextLine());
+                    console.nextLine();
+                }
+            //}
+
         }
     }
 
