@@ -217,7 +217,7 @@ public class Menu {
             String command = sc.nextLine().toLowerCase();
             switch (command) {
                 case "search":
-                    typeOfListedVehicles = 1;
+                    typeOfListedVehicles = 1;       //for search
                     VehicleOptions.makeQuery(idUsr, sc, out);
                     break;
                 case "ads":
@@ -239,11 +239,11 @@ public class Menu {
             String command = sc.nextLine().toLowerCase();
             switch (command) {
                 case "savedads":
-                    typeOfListedVehicles = 0;
+                    typeOfListedVehicles = 0;       //for list saved ads
                     if(!AdOptions.savedAds(idUsr, sc, out)){out.println("there isn't saved ads in your profile!");}
                     break;
                 case "myads":
-                    typeOfListedVehicles = -1;
+                    typeOfListedVehicles = -1;      //for my ads
                     AdOptions.myAds(idUsr, sc, out);
                     break;
                 case "addnewad":

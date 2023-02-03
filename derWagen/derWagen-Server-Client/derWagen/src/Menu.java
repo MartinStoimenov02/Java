@@ -3,6 +3,8 @@ import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -34,7 +36,9 @@ public class Menu {
                     }catch(IOException | SQLException | SignUpException e){e.printStackTrace();}
                 });
                 clientThread.start();
-                System.out.println(usersLock+" - "+clientThread+" is in server!\n");
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+                LocalDateTime now = LocalDateTime.now();
+                System.out.println(usersLock+" - "+clientThread+" is in server at "+dtf.format(now));
             }
         }catch (IOException e){e.printStackTrace();}
 //        catch (SQLException e) {
@@ -73,7 +77,7 @@ public class Menu {
                         login.loginInfo(sc, out);
                     }
                     case "end" -> {
-                        System.out.println("client disconnected!");
+                        System.out.println("client disconnected!\n");
                         out.println("goodbye!");
                         return;
                         //System.exit(14);

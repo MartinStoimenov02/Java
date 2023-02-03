@@ -22,7 +22,7 @@ public class ExportToFile{
                 } else {
                     out.println("File already exists! Rename file, rewrite in the same file or add at the end of the same file?" +
                             "(rename/rewrite/add)?");
-                    command=sc.next();
+                    command=sc.nextLine();
                     if(command.equals("rename")){
                         inputPath(vehicle, sc, out);
                     }

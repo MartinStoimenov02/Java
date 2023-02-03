@@ -3,6 +3,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -71,37 +74,104 @@ public class UserOptions {
         if (resultSet.next()){
             user = new User(resultSet.getString("name"), resultSet.getString("number"),
                     resultSet.getString("usrName"), out);
-            String savedAdsString = resultSet.getString("savedAds");
-            if(!savedAdsString.equals("")){
-                List<Integer> savedAds = Arrays.stream(savedAdsString.split(",")).map(Integer::parseInt).collect(Collectors.toList());
-                user.setSavedAds(savedAds);
+            String friendsString = resultSet.getString("friends");
+
+            List<Integer> friends = new ArrayList<>();
+            if(friendsString!=null && !friendsString.equals("")){
+                friends = Arrays.stream(friendsString.split(",")).map(Integer::parseInt).collect(Collectors.toList());
+                user.setFriends(friends);
             }
+            String date=resultSet.getString("lastseen");
+            user.setLastseen(date);
             return user;
         }
         return null;
     }
 
-    public static boolean deleteUser(int idUsr, Scanner sc, PrintStream out) throws SQLException, IndexOfVehicleException, SignUpException {
-        ReadFromDatabase read = new ReadFromDatabase();
-        String query = "SELECT * FROM car;";
-        ResultSet resultSet = read.getUsersOrVehicle(query, out);
-        if(resultSet!=null) {
-            while (resultSet.next()) {
-                int userID = resultSet.getInt("idUsr");
-                int id = resultSet.getInt("id");
-                if (userID == idUsr) {
-                    AdOptions adOptions = new AdOptions();
-                    adOptions.deleteAd(id, sc, out);
-                }
+    public void changeLastseen(int idUsr) throws SQLException {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        String query="Update usr set lastseen = \""+dtf.format(now)+"\" where id=" + idUsr+";";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.executeUpdate();
+    }
+
+    public boolean addToContact(int idUsr, int receiver) throws SQLException {
+        List<Integer> friends = Login.user.getfriends();
+        if(friends.contains(receiver)){
+            return false;
+        }
+        else {
+            friends.add(receiver);
+            String stringFriends = friends.stream().map(String::valueOf).collect(Collectors.joining(","));
+            String query="Update usr set friends = \""+ stringFriends +"\" where id="+idUsr+";";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            int correct = preparedStatement.executeUpdate();
+            if(correct!=0){
+                return true;
             }
         }
-        query = "DELETE FROM usr WHERE id="+idUsr+";";
-
-        if(read.deleteOrEdit(query, out)){return true;}
         return false;
     }
 
-    public boolean editUser(int idUsr, User user, Scanner sc, PrintStream out, String property) throws SQLException, IndexOfVehicleException, SignUpException {
+    public static boolean myContacts(int idUsr, Scanner sc, PrintStream out) throws SQLException, SignUpException {
+        UserOptions userOptions = new UserOptions();
+        User user = userOptions.getUserFromId(idUsr, out);
+        List<Integer> friends = user.getfriends();
+        if(friends.size()==0){
+            return false;
+        }
+        String query = "select * from usr where ";
+        for(int i : friends){
+            query=query+"id="+i + " or ";
+        }
+        query=query.substring(0, query.length() - 3);
+        SearchUsers.readUsers(query, idUsr, sc, out);
+        return true;
+    }
+
+    public static boolean deleteFromFriends(int idUsr, PrintStream out) throws SQLException, SignUpException {
+        ReadFromDatabase readFromDatabase = new ReadFromDatabase();
+        String query = "SELECT * FROM usr;";
+        ResultSet resultSet = readFromDatabase.getUsers(query, out);
+        if(resultSet!=null){
+            while (resultSet.next()) {
+                int userID = resultSet.getInt("id");
+                UserOptions userOptions = new UserOptions();
+                User user = userOptions.getUserFromId(userID, out);
+                String friendsString = resultSet.getString("friends");
+                List<Integer> friends;
+                if (friendsString!=null && !friendsString.equals("")) {
+                    friends = Arrays.stream(friendsString.split(",")).map(Integer::parseInt).collect(Collectors.toList());
+                    user.setFriends(friends);
+
+                    if (friends.contains(idUsr)) {
+                        friends.remove(Integer.valueOf(idUsr));
+                        String stringSavedAds = friends.stream().map(String::valueOf).collect(Collectors.joining(","));
+                        query = "Update usr set friends = \"" + stringSavedAds + "\" where id=" + userID + ";";
+                        PreparedStatement preparedStatement = connection.prepareStatement(query);
+                        int correct = preparedStatement.executeUpdate();
+                        if (correct != 0) {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean deleteUser(int idUsr, PrintStream out) throws SQLException, SignUpException {
+        ReadFromDatabase read = new ReadFromDatabase();
+        if(deleteFromFriends(idUsr, out)){
+            String query = "DELETE FROM usr WHERE id="+idUsr+";";
+            return read.deleteOrEdit(query, out);
+        }
+        return false;
+    }
+
+    public boolean editUser(int idUsr, Scanner sc, PrintStream out, String property) throws SQLException, SignUpException {
+        User user = getUserFromId(idUsr, out);
         switch(property){
             case "password":
                 changePassword(user.getUsrName(), user.getNumber(), out, sc);
@@ -113,8 +183,8 @@ public class UserOptions {
                 if(changePhoneNumber(idUsr, out, sc))return true;
                 break;
             case "name":
-                String name="";
-                name=sc.nextLine();
+                out.println("new name:");
+                String name=sc.nextLine();
                 String query="Update usr set name = \""+name+"\" where id="+idUsr+";";
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
                 int correct = preparedStatement.executeUpdate();
@@ -122,12 +192,12 @@ public class UserOptions {
                     return true;
                 }
             case "back":
-                Menu.editProfile(idUsr, user, sc, out);
+                Server.editProfile(idUsr, sc, out);
         }
         return false;
     }
 
-    public boolean changeUsername(int idUsr, PrintStream out, Scanner sc) throws SQLException {
+    public boolean changeUsername(int idUsr, PrintStream out, Scanner sc){
         String username="";
         try{
             boolean flag;
@@ -156,7 +226,7 @@ public class UserOptions {
         return false;
     }
 
-    public boolean changePhoneNumber(int idUsr, PrintStream out, Scanner sc) throws SQLException {
+    public boolean changePhoneNumber(int idUsr, PrintStream out, Scanner sc){
         String number="";
         try {
             boolean flag;
