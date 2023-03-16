@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4532fa13-60f8-4c64-b124-66e44a147fe1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lab3/.idea/lab3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab4/.idea/lab4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../sem-TU/sem5/sem5/sel5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DBConnection/out/production/DBConnection/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DBConnection/out/production/DBConnection/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../dataBase/out/production/dataBase/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dataBase/out/production/dataBase/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../dataBase/out/production/dataBase/InputDesignation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dataBase/out/production/dataBase/InputDesignation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../dataBase/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dataBase/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab5/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab5/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/BlackFriday.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/BlackFriday.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Electronics.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Electronics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/ImportData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/ImportData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/NoMoreProductsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/NoMoreProductsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/ProductLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/ProductLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Provider.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/Provider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/ValidatePhone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/ValidatePhone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/WrongPhoneNumberException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/out/production/zad1/WrongPhoneNumberException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/src/BlackFriday.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/src/BlackFriday.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/zad1/src/ProductLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/zad1/src/ProductLoader.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I8DJ5LCrZVAwrHKb3h0yQZx7dZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Moi_raboti/GitHub/Java/lab-TU/lab4"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="zad1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="zad1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4532fa13-60f8-4c64-b124-66e44a147fe1" name="Changes" comment="" />
+      <created>1669554241682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669554241682</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a749b1ee-983b-4fd2-8584-40608cde06ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derWagen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/AdOptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/AddInDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/ConnectToDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/ExportToFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/IndexOfVehicleException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/ReadFromDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/SignUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/SignUpException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/UserOptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/VehicleOptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/derWagen/readParamsFromConsole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddInDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectToDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExportToFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IndexOfVehicleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadFromDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VehicleOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/readParamsFromConsole.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2KpTvjdiY5d8xKoYQzp7neEu2gE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Moi_raboti/GitHub/Java/derWagen/derWagen"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a749b1ee-983b-4fd2-8584-40608cde06ac" name="Changes" comment="" />
+      <created>1674670761766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674670761766</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

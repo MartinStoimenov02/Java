@@ -21,6 +21,6 @@ Select * from usr where usrName="krumsultov14";
 
 SELECT * FROM messages.usr;
 
-DELETE FROM usr WHERE id=11;
+DELETE FROM usr WHERE id=15;
 
 Drop table usr;

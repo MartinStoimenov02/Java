@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8b3e4ae-2a9f-4fac-8ade-88a2d87a3b15" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DBConnection/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DBConnection/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DBConnection/src/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DBConnection/src/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Random_generate/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Random_generate/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReadFromDatabase/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReadFromDatabase/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReadFromDatabase/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReadFromDatabase/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ServerMail/message.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ServerMail/message.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ServerMail/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ServerMail/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ServerMail/src/UserOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ServerMail/src/UserOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Student/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Student/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/1_ExamExample/ServerUISS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/1_ExamExample/ServerUISS/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/1_ExamExample/ServerUISS/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/1_ExamExample/ServerUISS/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/2_ExamExample/Scholarship/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/2_ExamExample/Scholarship/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/2_ExamExample/Scholarship/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/2_ExamExample/Scholarship/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/ExamOfficial/regexSupport/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/ExamOfficial/regexSupport/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/ExamOfficial/regexSupport/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/exam-TU/ExamOfficial/regexSupport/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab10/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab10/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab10/lab10/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab10/lab10/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/lab.2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/lab.2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/zad2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/zad2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/zad3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/zad3/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/zad4/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab2/zad4/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/zad1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/zad1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/zad2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/zad2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/zad3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab3/zad3/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab4/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab4/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab4/zad1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab4/zad1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab4/zad2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab4/zad2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab5/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab5/zad1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab5/zad1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab6/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab6/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab6/zad1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab6/zad1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab6/zad1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab6/zad1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab7/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab7/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab7/lab7-zad1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab7/lab7-zad1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab7/lab7-zad1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab7/lab7-zad1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab8/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab8/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab8/zad1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab8/zad1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab8/zad1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/lab-TU/lab8/zad1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem3/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem3/zad1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem3/zad1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem4/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem4/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem4/zad2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem4/zad2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem5/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem5/sem5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem5/sem5/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem5/sem5/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem5/sem5/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem6/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem6/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem6/sem6/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem6/sem6/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem6/sem6/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../TU-Sofia/sem-TU/sem6/sem6/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Wallpaper/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Wallpaper/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WallpaperWithConstructor/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WallpaperWithConstructor/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../arrayGlobal/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../arrayGlobal/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../createFile/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../createFile/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../dataBase/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dataBase/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../dataBase/out/production/dataBase/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dataBase/out/production/dataBase/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../dataBase/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../dataBase/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exceptions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../exceptions/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../fingCharInString/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../fingCharInString/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../list/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../list/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../repair_program/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../repair_program/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../string/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../string/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KQ2AVnDv15PGw8pV5DiCJqaI4z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Moi_raboti/GitHub/Java/derWagen/derWagen-Server-Client/derWagen",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marti\Downloads\derWagen\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="derWagen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8b3e4ae-2a9f-4fac-8ade-88a2d87a3b15" name="Changes" comment="" />
+      <created>1673892344492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673892344492</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

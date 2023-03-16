@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Moi_raboti\GitHub\Java\DBConnection"/>
+			<item value="D:\Moi_raboti\GitHub\Java\dataBase"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\лаб. упражнения\lab4\upr5-1"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\лаб. упражнения\lab4\zad2"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\лаб. упражнения\lab4\zad1"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\програми\javacZad\nasledqvane\zad2"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\програми\eNum"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\Java-main\Example2"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\Java-main\Example1"/>
+			<item value="D:\Moi_raboti\GitHub\Java\Wallpaper"/>
+			<item value="D:\Moi_raboti\GitHub\Java\Student"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\програми\наследяване"/>
+			<item value="D:\Moi_raboti\GitHub\Java"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\програми"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\програми\arrayGlobal"/>
+			<item value="D:\Moi_raboti\Mои работи\Документи\ТУ\3-ти семестър\ПНПЕ\програми\This_class"/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1666107451822"/>
+	</section>
+</section>
